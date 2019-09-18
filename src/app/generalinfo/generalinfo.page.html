@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{caninfo.name}}       
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-card> 
+        <ion-row no-padding>
+        <ion-col>
+        </ion-col>
+        <ion-col text-right>
+            <ion-img src="../../assets/icon/bidon.jpg"></ion-img>     
+        </ion-col>
+        </ion-row>
+        </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>APPLICATION</ion-card-title>      
+    </ion-card-header>
+      <ion-card-content>
+        <p *ngFor="let line of caninfo.application">{{ line }}</p>        
+      </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>CUSTOMER BENEFIT</ion-card-title>      
+    </ion-card-header>
+      <ion-card-content>
+        <p> {{ caninfo.customer_benefit }}</p>
+      </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>DOWNLOAD MOBILE APP</ion-card-title>      
+    </ion-card-header>
+      <ion-card-content>
+        <ion-button  fill="clear" href="https://play.google.com/work?hl=fr">
+          <ion-img src="../../assets/icon/google-play.png"></ion-img>
+        </ion-button>
+        <br>
+        <strong> Please download the new Total mobile app to get rewards</strong>
+      </ion-card-content>
+  </ion-card>
+</ion-content>

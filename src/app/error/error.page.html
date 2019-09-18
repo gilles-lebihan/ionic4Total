@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>error</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>ERROR MESSAGE</ion-card-title>      
+    </ion-card-header>
+      <ion-card-content>
+        <p> comment </p>
+      </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="image">
+      <ion-card-header>
+        <ion-card-title>PHOTO PRODUCT WITH WRONG ID</ion-card-title>      
+      </ion-card-header>
+        <ion-card-content>
+            <img [src]="image" style="max-width: 100%">
+        </ion-card-content>
+  </ion-card>
+  <div text-center>
+      <button ion-button round large icon-only (click)="onTakePhoto()">
+        <ion-icon name="camera"></ion-icon>
+      </button>
+  </div>  
+</ion-content>

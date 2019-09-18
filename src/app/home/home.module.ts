@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
+import { WithidComponent } from './withid/withid.component';
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -15,9 +15,13 @@ import { HomePage } from './home.page';
       {
         path: '',
         component: HomePage
-      }
+      },
+      {
+        path: ':id',
+        component: WithidComponent
+      },
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,WithidComponent]
 })
 export class HomePageModule {}
